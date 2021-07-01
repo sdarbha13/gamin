@@ -24,9 +24,7 @@ canvas.addEventListener("mouseup", function (event) {
   mouse.click = false;
 });
 const pLeft = new Image();
-pLeft.src = 'https://lh3.googleusercontent.com/proxy/Arz-PFZQacFwEkkPJOaVnIRaFYAXkka80hl-NxzFKzY-D0wn3aoDUlq3s9pPX0GGCTDaRgy2f4mN4Is90pS5tscO_O7IQHvr';
-const pR = new Image();
-pR.src = 'https://lh3.googleusercontent.com/proxy/Arz-PFZQacFwEkkPJOaVnIRaFYAXkka80hl-NxzFKzY-D0wn3aoDUlq3s9pPX0GGCTDaRgy2f4mN4Is90pS5tscO_O7IQHvr';
+pLeft.src = 'http://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/e06f6b625281365.png';
 
 class Playa {
  
@@ -72,14 +70,11 @@ ctx.save();
 ctx.translate(this.x, this.y);
 ctx.rotate(this.angle);
 
-    if(this.x >= mouse.x){
+  
       ctx.drawImage(pLeft, this.frameX * this.spriteWidth, this.frameY * this.spriteHeight, this.spriteWidth, this.spriteHeight, 0 - 95, 0 - 72, this.spriteWidth * 0.55, this.spriteHeight * 0.55);
 
-    }  
-    else{
-      ctx.drawImage(pR, this.frameX * this.spriteWidth, this.frameY * this.spriteHeight, this.spriteWidth, this.spriteHeight, 0 - 95, 0 - 72, this.spriteWidth * 0.55, this.spriteHeight * 0.55);
-
-    }
+   
+  
    ctx.restore();
   }
 }
