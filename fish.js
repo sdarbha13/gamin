@@ -71,10 +71,7 @@ ctx.translate(this.x, this.y);
 ctx.rotate(this.angle);
 
   
-      ctx.drawImage(pLeft, this.frameX * this.spriteWidth, this.frameY * this.spriteHeight, this.spriteWidth, this.spriteHeight, 0 - 95, 0 - 72, this.spriteWidth * 0.55, this.spriteHeight * 0.55);
-
-   
-  
+  ctx.drawImage(pLeft, this.frameX * this.spriteWidth, this.frameY * this.spriteHeight, this.spriteWidth, this.spriteHeight, 0 - 45, 0 - 55, this.spriteWidth * 0.28, this.spriteHeight * 0.28);
    ctx.restore();
   }
 }
